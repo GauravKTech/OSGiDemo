@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ai7gcLYLEeS8T80_jYgLTQ" elementId="org.eclipse.e4.ide.application" bindingContexts="_ai8HiLYLEeS8T80_jYgLTQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_ai8HgLYLEeS8T80_jYgLTQ" label="com.gauravktech.osgi.e4" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_ai8Hn7YLEeS8T80_jYgLTQ">
+      <children xsi:type="advanced:Perspective" xmi:id="_ai8HoLYLEeS8T80_jYgLTQ">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_ai8HobYLEeS8T80_jYgLTQ">
+          <children xsi:type="basic:PartStack" xmi:id="_ai8ukLYLEeS8T80_jYgLTQ">
+            <children xsi:type="basic:Part" xmi:id="_ai8ukbYLEeS8T80_jYgLTQ" contributionURI="bundleclass://com.gauravktech.osgi.e4/com.gauravktech.osgi.e4.parts.SamplePart" label="Sample Part"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_ai8HmLYLEeS8T80_jYgLTQ" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_ai8HmbYLEeS8T80_jYgLTQ" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ai8HmrYLEeS8T80_jYgLTQ" label="Open" iconURI="platform:/plugin/com.gauravktech.osgi.e4/icons/sample.gif" command="_ai8Hj7YLEeS8T80_jYgLTQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ai8Hm7YLEeS8T80_jYgLTQ" label="Save" iconURI="platform:/plugin/com.gauravktech.osgi.e4/icons/save_edit.gif" command="_ai8HkrYLEeS8T80_jYgLTQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ai8HnLYLEeS8T80_jYgLTQ" label="Quit" command="_ai8Hi7YLEeS8T80_jYgLTQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_ai8HnbYLEeS8T80_jYgLTQ" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ai8HnrYLEeS8T80_jYgLTQ" label="About" command="_ai8HlbYLEeS8T80_jYgLTQ"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_ai8ukrYLEeS8T80_jYgLTQ">
+      <children xsi:type="menu:ToolBar" xmi:id="_ai8uk7YLEeS8T80_jYgLTQ" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ai8ulLYLEeS8T80_jYgLTQ" iconURI="platform:/plugin/com.gauravktech.osgi.e4/icons/sample.gif" command="_ai8Hj7YLEeS8T80_jYgLTQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ai8ulbYLEeS8T80_jYgLTQ" iconURI="platform:/plugin/com.gauravktech.osgi.e4/icons/save_edit.gif" command="_ai8HkrYLEeS8T80_jYgLTQ"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_ai8HjLYLEeS8T80_jYgLTQ" elementId="com.gauravktech.osgi.e4.handler.quitCommand" contributionURI="bundleclass://com.gauravktech.osgi.e4/com.gauravktech.osgi.e4.handlers.QuitHandler" command="_ai8Hi7YLEeS8T80_jYgLTQ"/>
+  <handlers xmi:id="_ai8HkLYLEeS8T80_jYgLTQ" elementId="com.gauravktech.osgi.e4.handler.openCommand" contributionURI="bundleclass://com.gauravktech.osgi.e4/com.gauravktech.osgi.e4.handlers.OpenHandler" command="_ai8Hj7YLEeS8T80_jYgLTQ"/>
+  <handlers xmi:id="_ai8Hk7YLEeS8T80_jYgLTQ" elementId="com.gauravktech.osgi.e4.handler.saveCommand" contributionURI="bundleclass://com.gauravktech.osgi.e4/com.gauravktech.osgi.e4.handlers.SaveHandler" command="_ai8HkrYLEeS8T80_jYgLTQ"/>
+  <handlers xmi:id="_ai8HlrYLEeS8T80_jYgLTQ" elementId="com.gauravktech.osgi.e4.handler.aboutCommand" contributionURI="bundleclass://com.gauravktech.osgi.e4/com.gauravktech.osgi.e4.handlers.AboutHandler" command="_ai8HlbYLEeS8T80_jYgLTQ"/>
+  <bindingTables xmi:id="_ai8HjbYLEeS8T80_jYgLTQ" bindingContext="_ai8HiLYLEeS8T80_jYgLTQ">
+    <bindings xmi:id="_ai8HjrYLEeS8T80_jYgLTQ" keySequence="M1+Q" command="_ai8Hi7YLEeS8T80_jYgLTQ"/>
+    <bindings xmi:id="_ai8HkbYLEeS8T80_jYgLTQ" keySequence="M1+O" command="_ai8Hj7YLEeS8T80_jYgLTQ"/>
+    <bindings xmi:id="_ai8HlLYLEeS8T80_jYgLTQ" keySequence="M1+S" command="_ai8HkrYLEeS8T80_jYgLTQ"/>
+    <bindings xmi:id="_ai8Hl7YLEeS8T80_jYgLTQ" keySequence="M1+A" command="_ai8HlbYLEeS8T80_jYgLTQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_ai8HiLYLEeS8T80_jYgLTQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_ai8HibYLEeS8T80_jYgLTQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_ai8HirYLEeS8T80_jYgLTQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_ai8Hi7YLEeS8T80_jYgLTQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_ai8Hj7YLEeS8T80_jYgLTQ" elementId="com.gauravktech.osgi.e4.open" commandName="openCommand"/>
+  <commands xmi:id="_ai8HkrYLEeS8T80_jYgLTQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_ai8HlbYLEeS8T80_jYgLTQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_ai8HgbYLEeS8T80_jYgLTQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_ai8HgrYLEeS8T80_jYgLTQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_ai8Hg7YLEeS8T80_jYgLTQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_ai8HhLYLEeS8T80_jYgLTQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_ai8HhbYLEeS8T80_jYgLTQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_ai8HhrYLEeS8T80_jYgLTQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_ai8Hh7YLEeS8T80_jYgLTQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
